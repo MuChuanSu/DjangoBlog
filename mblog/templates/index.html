@@ -1,0 +1,17 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Welcome to my blog</title>
+</head>
+<body>
+<h1>Welcome to my blog</h1>
+<hr>
+{%for post in posts%}
+    <p>
+        <a href='/post/{{post.slug}}'>{{post.title}}</a>
+    </p>
+{%endfor%}
+<hr>
+<h3>The time now is :{{now}}</h3>
+</body>
+</html>
